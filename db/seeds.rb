@@ -10,9 +10,9 @@
 
 # Création de 3 participants avec leurs projets respectifs
 participants_data = [
-  { name: "Alice Dupont", project_name: "Projet Vert" },
-  { name: "Bob Martin", project_name: "Projet Bleu" },
-  { name: "Claire Dubois", project_name: "Projet Rouge" }
+  { name: "Alice ", project_name: "Projet Vert" },
+  { name: "Bob ", project_name: "Projet Bleu" },
+  { name: "Claire", project_name: "Projet Rouge" }
 ]
 
 participants_data.each do |data|
