@@ -1,21 +1,32 @@
-<h2 class="text-2xl mb-2">Les projets </h2>
-  
-<div class="flex">
-  <div class="p-10 bg-neutral">
-    <h3 id="headline">Les projets</h3>
+<h1 class="text-5xl font-bold text-center mt-5 mb-10">🏆 Shuffle Selection 🏆 </h1>
+
+<div class="flex justify-between items-start gap-2">
+  <div class="py-5">
+    <span id="headline" class="text-3xl font-bold mb-4">📜 Les projets</span>
     <small id="subheader">(separated by commas or new lines) 
       <span id="counter"></span>
     </small>
-    <textarea class="p-3 border border-gray-400 rounded-s-md bg-inherit" id="names" rows="10" cols="40"><%= @participants.map(&:name).join(", ") %></textarea>
+    <textarea class="p-3 border border-gray-400 rounded-s-md bg-inherit" id="names" rows="5" cols="40"><%= @participants.map(&:name).join(", ") %></textarea>
     <small id="counter"></small>
+    
+  </div>
+
+  <div class="flex gap-3 self-center">
     <button id="spin" class="btn btn-active btn-primary text-xl">Spin the wheel</button>
     <button id="remove">Remove Winner</button>
   </div>
 
-  <div class="container">
+  <div class="py-5 text-3xl font-bold mb-4 items-start">
+    <h2>🥇 Ordres de passage : </h2>
+    <div id="passageOrder" class="font-normal mb-5"></div>
+  </div>
+</div>
+
+  <div class="container flex justify-center mt-10">
     <div id="wheel"></div>
   </div>
 </div>
+
 
 <!-- Modale pour afficher le gagnant -->
 <div id="projectModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
@@ -30,6 +41,7 @@
         <button id="closeModal" class="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
           Fermer
         </button>
+        <button id="remove">Remove Winner</button>
       </div>
     </div>
   </div>
@@ -71,12 +83,6 @@
 </script>
 <%= javascript_include_tag 'custom' %>
 
-<div>
-  <h2 class="text-2xl"> Ordres de passage : </h2>
-  <div id="passageOrder">
-    
-  </div>
 
 
-
-  </div>
+  

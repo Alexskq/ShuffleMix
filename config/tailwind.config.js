@@ -20,4 +20,7 @@ module.exports = {
     require("@tailwindcss/container-queries"),
     require("daisyui"),
   ],
+  daisyui: {
+    themes: ["nord"],
+  },
 };

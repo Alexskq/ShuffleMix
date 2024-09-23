@@ -137,6 +137,7 @@ let spinWheel = () => {
 let addWinnerToPassageOrder = (winnerName) => {
   const passageDiv = document.getElementById("passageOrder");
   const newEntry = document.createElement("p");
+  newEntry.classList.add("py-4", "text-center");
   newEntry.textContent = `${winnerCount} - ${winnerName}`; // Ajoute le numéro du gagnant
   passageDiv.appendChild(newEntry);
   winnerCount++; // Incrémente le compteur après chaque tirage
