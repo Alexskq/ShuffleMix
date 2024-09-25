@@ -67,7 +67,7 @@ button {
 #wheel {
   position: relative;
   overflow: hidden;
-  margin: 0 0 0 60px;
+  // margin: 0 0 0 60px;
 
   &:after {
     content: "";
@@ -85,4 +85,8 @@ button {
 
 #counter {
   float: right;
+}
+
+#dotted {
+  border: none !important;
 }

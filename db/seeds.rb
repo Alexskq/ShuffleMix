@@ -12,7 +12,10 @@
 participants_data = [
   { name: "Alice ", project_name: "Projet Vert" },
   { name: "Bob ", project_name: "Projet Bleu" },
-  { name: "Claire", project_name: "Projet Rouge" }
+  { name: "Claire", project_name: "Projet Jaune" },
+  { name: "Alex", project_name: "Projet Violet" },
+  { name: "Anais", project_name: "Projet Rouge" }
+
 ]
 
 participants_data.each do |data|
