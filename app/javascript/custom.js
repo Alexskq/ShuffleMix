@@ -32,18 +32,38 @@ let checkTextArea = () => {
     .map(function (item) {
       return item.trim();
     });
-  document.getElementById("counter").innerText = names.length + " noms";
+  document.getElementById("counter").innerText = names.length + " names";
   sliceDeg = 360 / names.length;
 };
 
 // Remplit les couleurs des tranches
+// let fillColors = () => {
+//   let color;
+//   while (colors.length < names.length) {
+//     do {
+//       color = Math.floor(Math.random() * 16777215);
+//     } while (colors.indexOf(color) >= 0);
+//     colors.push("#" + ("000000" + color.toString(16)).slice(-6));
+//   }
+// };
+
 let fillColors = () => {
-  let color;
+  const predefinedColors = [
+    "#FF4F3864",
+    "#FF447665",
+    "#F66DFF56",
+    "#5178FD7C",
+    "#0F89FD7F",
+    "#34FFC24B",
+    "#71FF8F4B",
+    "#FE84389D",
+    "#0090FF",
+    "#FDCA327B",
+  ];
+
   while (colors.length < names.length) {
-    do {
-      color = Math.floor(Math.random() * 16777215);
-    } while (colors.indexOf(color) >= 0);
-    colors.push("#" + ("000000" + color.toString(16)).slice(-6));
+    let color = predefinedColors[colors.length % predefinedColors.length];
+    colors.push(color);
   }
 };
 
@@ -137,7 +157,13 @@ let spinWheel = () => {
 let addWinnerToPassageOrder = (winnerName) => {
   const passageDiv = document.getElementById("passageOrder");
   const newEntry = document.createElement("p");
-  newEntry.classList.add("py-4", "text-start", "ml-2", "text-black");
+  newEntry.classList.add(
+    "py-4",
+    "text-start",
+    "ml-2",
+    "text-[#bdbdbd]",
+    "text-lg"
+  );
   newEntry.textContent = `${winnerCount} - ${winnerName}`; // Ajoute le numéro du gagnant
   passageDiv.appendChild(newEntry);
   winnerCount++; // Incrémente le compteur après chaque tirage
