@@ -13,7 +13,9 @@
   </head>
 
   <%# <body style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.wallpapersafari.com/97/19/FqREVJ.jpg);" class="h-full w-full"> %>
-  <body class="h-full w-full bg-[#FFF7F8]">
+  <%# <body style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://img.freepik.com/premium-vector/3d-casino-chip-design-background-luxury-black-background-vector-illustration_29865-5935.jpg?w=900);" class="h-full w-full bg-cover"> %>
+  <body style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path('wallpaper.png') %>)" class="h-full w-full bg-cover">
+  <%# <body class="h-full w-full bg-[#FFF7F8]"> %>
     <main class="container mx-auto px-5 ">
       <%= yield %>
     </main>
