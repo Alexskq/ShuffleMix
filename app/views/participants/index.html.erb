@@ -86,6 +86,10 @@
       winnerName.textContent = `👉 ${winner}`;
       // projectName.textContent = `${project}`;
       modal.classList.remove('hidden');
+      confetti({
+  particleCount: 150,
+  spread: 180,
+});
     };
 
     closeModal.addEventListener('click', function() {
