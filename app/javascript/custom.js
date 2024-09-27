@@ -158,7 +158,7 @@ let addWinnerToPassageOrder = (winnerName) => {
   const passageDiv = document.getElementById("passageOrder");
   const newEntry = document.createElement("p");
   newEntry.classList.add(
-    "py-4",
+    "py-2",
     "text-start",
     "ml-2",
     "text-[#bdbdbd]",

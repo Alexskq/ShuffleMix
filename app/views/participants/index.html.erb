@@ -16,18 +16,18 @@
 
 <div class="flex">
   <div class="md:flex flex-wrap md:justify-between md:items-start gap-2">
-    <div class="grow">
+    <div class=""> <!-- deleted grow -->
       <div class="card mx-auto md:w-96 self-center shadow-xl p-5 grow border border-[#c6a992]">
         <span id="headline" class="text-3xl font-bold mb-4 py-2 text-[#ffcc14] tracking-wide">📜 Projects</span>
         <small id="subheader" class="text-[#bdbdbd]">(separated by commas or new lines) 
           <span id="counter"></span>
         </small>
-        <textarea class="p-3 border border-[#F8BFC8] w-full rounded-s-md bg-inherit text-[#bdbdbd]" id="names" rows="5" cols="25"><%= @participants.map(&:name).join(", ") %></textarea>
+        <textarea class="p-3 border border-[#ffcc14] focus:ring-[#ffcc14] w-full rounded-s-md bg-inherit text-[#bdbdbd]" id="names" rows="5" cols="25"><%= @participants.map(&:name).join(", ") %></textarea>
         <small id="counter"></small>
       </div>
     </div>
 
-    <div class="flex gap-3 self-center card-body md:text-sm px-0">
+    <div class="flex gap-3 self-center card-body md:text-sm p-2">
       <button id="spin" class="btn btn-active bg-[#46A758] sm:text-xl text-sm w-52 self-center text-white">Spin</button>
       <button id="remove" class="sm:text-xl text-sm w-52 self-center">Remove Winner</button>
     </div>
@@ -39,7 +39,7 @@
 
   <div class="h-full flex justify-center items-center ml-8">
     <div class="py-5 text-3xl font-bold mb-4 items-start card  w-96 shadow-xl p-5 text-[#bdbdbd] border border-[#c6a992]">
-      <h2 class="text-[#ffcc14] tracking-wide">🥇 Order</h2>
+      <h2 class="text-[#ffcc14] tracking-wide mb-4">🥇 Order</h2>
       <div id="passageOrder" class="font-normal mb-5 flex-col justify-start">
       </div>
     </div>
@@ -58,7 +58,7 @@
         <p id="projectName" class="text-sm text-gray-500"></p>
       </div>
       <div class="items-center px-4 py-3">
-        <button id="closeModal" class="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-[50%] shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
+        <button id="closeModal" class="px-4 py-2 bg-[#ffcc14] text-black text-base font-medium rounded-md w-[50%] shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
           Fermer
         </button>
       </div>
