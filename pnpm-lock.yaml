@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      canvas-confetti:
+        specifier: ^1.9.3
+        version: 1.9.3
     devDependencies:
       daisyui:
         specifier: ^4.12.10
@@ -17,6 +21,9 @@ packages:
   camelcase-css@2.0.1:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
+
+  canvas-confetti@1.9.3:
+    resolution: {integrity: sha512-rFfTURMvmVEX1gyXFgn5QMn81bYk70qa0HLzcIOSVEyl57n6o9ItHeBtUSWdvKAPY0xlvBHno4/v3QPrT83q9g==}
 
   css-selector-tokenizer@0.8.0:
     resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==}
@@ -62,6 +69,8 @@ packages:
 snapshots:
 
   camelcase-css@2.0.1: {}
+
+  canvas-confetti@1.9.3: {}
 
   css-selector-tokenizer@0.8.0:
     dependencies:
